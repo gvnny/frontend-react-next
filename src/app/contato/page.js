@@ -1,6 +1,15 @@
+import CustomButton from "@/components/utils/CustomButton";
+
+const user = {name: "Geovanny", email: "geovanny@gmail.com", avatar: "aaaa"}
+
 const Contato = () => {
     return(
-      <h1>Contatos</h1>
+      <div>
+        <h1>Contatos</h1>
+        <CustomButton titulo="Login"/>
+        <CustomButton titulo="Cadastro" num='10' idade='25'/>
+        <CustomButton user={user}/>
+      </div>
     )
   }
   
