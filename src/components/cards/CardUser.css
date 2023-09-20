@@ -19,3 +19,14 @@
 .card-user div p{
     margin: 0;
 }
+
+.card-user div p span{
+    margin: 15px 10px 0 0;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card-user div p span.delete {
+    color: red;
+}

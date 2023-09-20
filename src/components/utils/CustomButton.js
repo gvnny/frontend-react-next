@@ -1,11 +1,10 @@
-const CustomButton = ({user}) => {
+import './CustomButton.css'
+
+const CustomButton = ({variant, title}) => {
   return (
     <>
-      <button>{user?.name}</button>
-      <p>Test: {user?.email}</p>
-      <p>Test: {user?.avatar}</p>
+      <button className={variant}>{title}</button>
     </>
-
   )
 }
 
