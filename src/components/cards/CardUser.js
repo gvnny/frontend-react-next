@@ -8,9 +8,11 @@ export const CardUser = ({ user }) => {
     const [showCard, setShowCard] = useState(true);
 
     const handleDelete = async (idUser) => {
+
         const objUser = {
             id: idUser,
         }
+        
         const response = await fetch('http://localhost:3300/user', {
             cache: 'no-store',
             method: 'DELETE',
